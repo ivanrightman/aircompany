@@ -59,7 +59,7 @@ public class AirportTest {
         List<? extends AbstractPlane> planesSortedByMaxLoadCapacity = airport.getPlanes();
         AbstractPlane currentPlane = planesSortedByMaxLoadCapacity.get(2);
         AbstractPlane nextPlane = planesSortedByMaxLoadCapacity.get(3);
-        Assert.assertTrue(nextPlane.getMinLoadCapacity() > currentPlane.getMinLoadCapacity());
+        Assert.assertTrue(nextPlane.getMaxLoadCapacity() > currentPlane.getMaxLoadCapacity());
     }
 
     @Test
